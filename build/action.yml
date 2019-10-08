@@ -1,0 +1,9 @@
+name: 'Convox Build'
+description: 'Build a Convox app'
+author: 'Convox'
+outputs:
+  release_id:
+    description: 'ID of the created build'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
