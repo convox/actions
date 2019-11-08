@@ -6,5 +6,5 @@ else
     echo "Building"
     export CONVOX_HOST=$INPUT_CONVOX_HOST
     export CONVOX_RACK=$INPUT_CONVOX_RACK
-    convox promote --app $INPUT_CONVOX_APP --release=$INPUT_RELEASE_ID
+    convox releases promote --app $INPUT_CONVOX_APP --release=$INPUT_RELEASE_ID
 fi
