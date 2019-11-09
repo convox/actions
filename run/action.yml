@@ -15,6 +15,9 @@ inputs:
   rack:
     description: 'Convox Rack name'
     required: true
+  service:
+    description: 'The app service to run the command against'
+    required: true
   command:
     description: 'The command to be run'
     required: true
