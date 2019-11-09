@@ -18,6 +18,9 @@ inputs:
   service:
     description: 'The app service to run the command against'
     required: true
+  release:
+    description: 'ID of the release to run the command against'
+    required: true
   command:
     description: 'The command to be run'
     required: true
