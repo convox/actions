@@ -9,14 +9,14 @@ inputs:
     description: 'Convox Console host address'
     required: true
     default: 'console.convox.com'
-  app:
-    description: 'Convox app name'
-    required: true
   rack:
     description: 'Convox Rack name'
     required: true
+  app:
+    description: 'Convox app name'
+    required: true
 outputs:
-  release_id:
+  release:
     description: 'ID of the created build'
 runs:
   using: 'docker'

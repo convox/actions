@@ -15,7 +15,7 @@ inputs:
   rack:
     description: 'Convox Rack name'
     required: true
-  release_id:
+  release:
     description: 'ID of the release to be promoted'
     required: true
 runs:
