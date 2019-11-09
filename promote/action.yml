@@ -1,5 +1,5 @@
-name: 'Convox Build'
-description: 'Build a Convox app'
+name: 'Convox Promote'
+description: 'Promote a release of a previously built Convox app'
 author: 'Convox'
 inputs:
   password:
@@ -15,9 +15,9 @@ inputs:
   rack:
     description: 'Convox Rack name'
     required: true
-outputs:
   release_id:
-    description: 'ID of the created build'
+    description: 'ID of the release to be promoted'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'

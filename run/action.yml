@@ -1,5 +1,5 @@
-name: 'Convox Build'
-description: 'Build a Convox app'
+name: 'Convox Run'
+description: 'Run a command against a Release of a Convox App'
 author: 'Convox'
 inputs:
   password:
@@ -15,9 +15,9 @@ inputs:
   rack:
     description: 'Convox Rack name'
     required: true
-outputs:
-  release_id:
-    description: 'ID of the created build'
+  command:
+    description: 'The command to be run'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
