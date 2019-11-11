@@ -2,10 +2,6 @@
 This Action [builds](https://docs.convox.com/deployment/builds) an app based on a [convox.yml](https://docs.convox.com/application/convox-yml) so that app can be deployed on Convox
 
 ## Inputs
-### `password`
-**Required** The value of your [Convox Deploy Key](https://docs.convox.com/console/deploy-keys)
-### `host`
-**Optional** The host name of your [Convox Console](https://docs.convox.com/introduction/console). This defaults to `console.convox.com` and only needs to be overwritten if you have a [self-hosted console](https://docs.convox.com/reference/hipaa-compliance#run-a-private-convox-console)
 ### `rack`
 **Required** The name of the [Convox Rack](https://docs.convox.com/introduction/rack) you wish to build against.
 ### `app`

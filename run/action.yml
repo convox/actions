@@ -2,13 +2,6 @@ name: 'Convox Run'
 description: 'Run a command using a specific Release of a Convox App'
 author: 'Convox'
 inputs:
-  password:
-    description: 'Convox deploy key value'
-    required: true
-  host:
-    description: 'Convox Console host address'
-    required: true
-    default: 'console.convox.com'
   app:
     description: 'Convox app name'
     required: true

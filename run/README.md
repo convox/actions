@@ -30,6 +30,7 @@ steps:
     password: ${{ secrets.CONVOX_DEPLOY_KEY }}
     rack: staging
     app: myapp
+    service: web
     release: ${{ steps.build.outputs.release }}
     command 'rake db:migrate'
 - name: promote

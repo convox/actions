@@ -2,10 +2,6 @@
 This Action [Promotes](https://docs.convox.com/deployment/releases#promoting-a-release) a previously built app to Convox. You will typically need to perform the [Build](../build) action prior to running this action.
 
 ## Inputs
-### `password`
-**Required** The value of your [Convox Deploy Key](https://docs.convox.com/console/deploy-keys)
-### `host`
-**Optional** The host name of your [Convox Console](https://docs.convox.com/introduction/console). This defaults to `console.convox.com` and only needs to be overwritten if you have a [self-hosted console](https://docs.convox.com/reference/hipaa-compliance#run-a-private-convox-console)
 ### `rack`
 **Required** The name of the [Convox Rack](https://docs.convox.com/introduction/rack) you wish to deploy to.
 ### `app`
