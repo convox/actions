@@ -1,5 +1,5 @@
 name: Convox Login
-description: Login to a Convox Console Host
+description: Login to Convox
 author: Convox
 inputs:
   password:

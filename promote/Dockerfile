@@ -6,7 +6,7 @@ LABEL homepage="https://convox.com/convox"
 LABEL maintainer="Convox <support@convox.com>"
 
 LABEL "com.github.actions.name"="Convox Promote"
-LABEL "com.github.actions.description"="Promote a previously built Release of on app on Convox"
+LABEL "com.github.actions.description"="Promote a release"
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="blue"
 

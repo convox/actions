@@ -1,5 +1,5 @@
-# Convox Build Action
-This Action sets required environment variables for Convox [password](https://docs.convox.com/console/deploy-keys) and host to be used by subsequent actions 
+# Convox Login Action
+This Action authenticates your Convox [Deploy Key](https://docs.convox.com/console/deploy-keys). You should perform this action as the first step before any other Convox actions.
 
 ## Inputs
 ### `password`

@@ -7,7 +7,7 @@ This Action [Promotes](https://docs.convox.com/deployment/releases#promoting-a-r
 ### `app`
 **Required** The name of the [app](https://docs.convox.com/deployment/creating-an-application) you wish to deploy.
 ### `release`
-**Optional** The ID of the [release](https://docs.convox.com/deployment/releases) you wish to promote. This ID is output as `release` by the [Build](../build) action. Only needed if you have not run a build step first or you wish to override the release id from the build step
+**Optional** The ID of the [release](https://docs.convox.com/deployment/releases) you wish to promote. If you have run a [Build](../build) action as a previous step this step will promote the release created by that build step by default. You only need to set the release if you have not run a build step first or you wish to override the release id from the build step
 
 ## Example usage
 ```

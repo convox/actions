@@ -1,5 +1,5 @@
 name: Convox Promote
-description: Promote a release of a previously built Convox app
+description: Promote a release
 author: Convox
 inputs:
   rack:

@@ -10,7 +10,7 @@ inputs:
     required: true
 outputs:
   release:
-    description: ID of the created build
+    description: Release ID of the created build
 runs:
   using: docker
   image: Dockerfile

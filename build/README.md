@@ -8,8 +8,7 @@ This Action [builds](https://docs.convox.com/deployment/builds) an app based on 
 **Required** The name of the [app](https://docs.convox.com/deployment/creating-an-application) you wish to build.
 ## Outputs
 ### `release`
-The ID of the release that is created when the build completes. You can use this ID to run subsequent actions such as [Run](../run) and [Promote](../promote) if you wish to override the default behavior of using the ID of the last build.
-
+The ID of the release that is created when the build completes. 
 ## Example usage
 ```
 uses: convox/actions/build@v1

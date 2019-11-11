@@ -6,7 +6,7 @@ LABEL homepage="https://convox.com/convox"
 LABEL maintainer="Convox <support@convox.com>"
 
 LABEL "com.github.actions.name"="Convox Login"
-LABEL "com.github.actions.description"="Sets required environment variables for Convox login"
+LABEL "com.github.actions.description"="Authenticates with your Convox account"
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="blue"
 

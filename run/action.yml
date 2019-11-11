@@ -1,5 +1,5 @@
 name: Convox Run
-description: Run a command using a specific Release of a Convox App
+description: Run a command
 author: Convox
 inputs:
   rack:
