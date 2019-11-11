@@ -7,23 +7,24 @@ This Action [Promotes](https://docs.convox.com/deployment/releases#promoting-a-r
 ### `app`
 **Required** The name of the [app](https://docs.convox.com/deployment/creating-an-application) you wish to deploy.
 ### `release`
-**Required** The ID of the [release](https://docs.convox.com/deployment/releases) you wish to promote. This ID is output as `release` by the [Build](../build) action
+**Optional** The ID of the [release](https://docs.convox.com/deployment/releases) you wish to promote. This ID is output as `release` by the [Build](../build) action. Only needed if you have not run a build step first or you wish to override the release id from the build step
 
 ## Example usage
 ```
 steps:
+- name: login
+  uses: convox/actions/login@v1
+  with:
+    password: ${{ secrets.CONVOX_DEPLOY_KEY }}
 - name: build
   id: build
   uses: convox/actions/build@v1
   with:
-    password: ${{ secrets.CONVOX_DEPLOY_KEY}}
     rack: staging
     app: myapp
 - name: promote
   uses: convox/actions/promote@v1
   with:
-    password: ${{ secrets.CONVOX_DEPLOY_KEY }}
     rack: staging
     app: myapp
-    release: ${{ steps.build.outputs.release }}
 ```

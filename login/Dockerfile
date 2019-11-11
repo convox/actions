@@ -5,8 +5,8 @@ LABEL repository="http://github.com/convox.actions"
 LABEL homepage="https://convox.com/convox"
 LABEL maintainer="Convox <support@convox.com>"
 
-LABEL "com.github.actions.name"="Convox Build"
-LABEL "com.github.actions.description"="Build an app to deploy on Convox"
+LABEL "com.github.actions.name"="Convox Login"
+LABEL "com.github.actions.description"="Sets required environment variables for Convox login"
 LABEL "com.github.actions.icon"="cloud"
 LABEL "com.github.actions.color"="blue"
 

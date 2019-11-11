@@ -3,7 +3,7 @@ This Action [Deploys](https://docs.convox.com/introduction/getting-started#deplo
 
 ## Inputs
 ### `password`
-**Required** The value of your [Convox Deploy Key](https://docs.convox.com/console/deploy-keys)
+**Optional** The value of your [Convox Deploy Key](https://docs.convox.com/console/deploy-keys). This is not required if you have previously run a [convox/actions/login](../login) step
 ### `host`
 **Optional** The host name of your [Convox Console](https://docs.convox.com/introduction/console). This defaults to `console.convox.com` and only needs to be overwritten if you have a [self-hosted console](https://docs.convox.com/reference/hipaa-compliance#run-a-private-convox-console)
 ### `rack`
@@ -15,7 +15,7 @@ This Action [Deploys](https://docs.convox.com/introduction/getting-started#deplo
 ```
 uses: convox/actions/deploy@v1
 with:
-  password: ${{ secrets.CONVOX_DEPLOY_KEY}}
+  password: ${{ secrets.CONVOX_DEPLOY_KEY }}
   rack: staging
   app: myapp
 ```

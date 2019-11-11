@@ -1,20 +1,20 @@
-name: 'Convox Deploy'
-description: 'Build and Deploy a Convox app in a single step'
-author: 'Convox'
+name: Convox Deploy
+description: Build and Deploy a Convox app in a single step
+author: Convox
 inputs:
   password:
-    description: 'Convox deploy key value'
-    required: true
+    description: Convox deploy key value
+    required: false
   host:
-    description: 'Convox Console host address'
-    required: true
-    default: 'console.convox.com'
+    description: Convox Console host address
+    required: false
+    default: console.convox.com
   app:
-    description: 'Convox app name'
+    description: Convox app name
     required: true
   rack:
-    description: 'Convox Rack name'
+    description: Convox Rack name
     required: true
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
+  using: docker
+  image: Dockerfile

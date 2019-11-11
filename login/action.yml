@@ -7,7 +7,7 @@ inputs:
     required: true
   host:
     description: Convox Console host address
-    required: true
+    required: false
     default: console.convox.com
 runs:
   using: docker

@@ -9,9 +9,7 @@ This Action sets required environment variables for Convox [password](https://do
 
 ## Example usage
 ```
-uses: convox/actions/build@v1
+uses: convox/actions/logind@v1
 with:
   password: ${{ secrets.CONVOX_DEPLOY_KEY }}
-  rack: staging
-  app: myapp
 ```
