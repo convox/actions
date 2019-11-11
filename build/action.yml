@@ -2,13 +2,6 @@ name: 'Convox Build'
 description: 'Build a Convox app'
 author: 'Convox'
 inputs:
-  password:
-    description: 'Convox deploy key value'
-    required: true
-  host:
-    description: 'Convox Console host address'
-    required: true
-    default: 'console.convox.com'
   rack:
     description: 'Convox Rack name'
     required: true
