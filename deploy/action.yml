@@ -2,11 +2,11 @@ name: Convox Deploy
 description: Build and Deploy a Convox app in a single step
 author: Convox
 inputs:
-  app:
-    description: Convox app name
-    required: true
   rack:
     description: Convox Rack name
+    required: true
+  app:
+    description: Convox app name
     required: true
   password:
     description: Convox deploy key value
