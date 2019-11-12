@@ -26,7 +26,7 @@ steps:
     rack: staging
     app: myapp
 - name: run
-  uses: convox/actions/promote@v1
+  uses: convox/actions/run@v1
   with:
     rack: staging
     app: myapp

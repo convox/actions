@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-LABEL version="0.1.0"
-LABEL repository="http://github.com/convox.actions"
+LABEL version="1.0.0"
+LABEL repository="http://github.com/convox/actions/promote"
 LABEL homepage="https://convox.com/convox"
 LABEL maintainer="Convox <support@convox.com>"
 
