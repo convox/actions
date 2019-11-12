@@ -1,0 +1,14 @@
+name: Convox Login
+description: Login to Convox
+author: Convox
+inputs:
+  password:
+    description: Convox deploy key value
+    required: true
+  host:
+    description: Convox Console host address
+    required: false
+    default: console.convox.com
+runs:
+  using: docker
+  image: Dockerfile

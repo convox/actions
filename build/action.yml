@@ -1,0 +1,16 @@
+name: Convox Build
+description: Build a Convox app
+author: Convox
+inputs:
+  rack:
+    description: Convox Rack name
+    required: true
+  app:
+    description: Convox app name
+    required: true
+outputs:
+  release:
+    description: Release ID of the created build
+runs:
+  using: docker
+  image: Dockerfile

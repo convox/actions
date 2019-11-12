@@ -1,0 +1,22 @@
+name: Convox Run
+description: Run a command
+author: Convox
+inputs:
+  rack:
+    description: Convox Rack name
+    required: true
+  app:
+    description: Convox app name
+    required: true
+  service:
+    description: The service to run the command against
+    required: true
+  command:
+    description: The command to be run
+    required: true
+  release:
+    description: ID of the release to run the command against. Only needed if you have not run a build step first or you wish to override the release id from the build step
+    required: false
+runs:
+  using: docker
+  image: Dockerfile

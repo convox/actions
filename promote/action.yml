@@ -1,0 +1,16 @@
+name: Convox Promote
+description: Promote a release
+author: Convox
+inputs:
+  rack:
+    description: Convox Rack name
+    required: true
+  app:
+    description: Convox app name
+    required: true
+  release:
+    description: ID of the release to promote. Only needed if you have not run a build step first or you wish to override the release id from the build
+    required: false
+runs:
+  using: docker
+  image: Dockerfile
